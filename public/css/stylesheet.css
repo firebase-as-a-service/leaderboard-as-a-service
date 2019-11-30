@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  overscroll-behavior: none;
+  /*background-color: lightblue;*/
+  background-color: #093145;
+  color: #fff;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin: 0 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (orientation: portrait) {
+  .container {
+    width: 90vw;
+  }
+}
+@media (orientation: landscape) {
+  .container {
+    width: 70vh;
+  }
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.controls {
+  margin: 0 auto 2em;
+  position: relative;
+}
+
+.board {
+  display: block;
+  margin: 10px auto 30px;
+}
+
+.btn,
+.timer,
+.score {
+  display: block;
+  font-size: 24px;
+}
+.btn,
+.timer {
+  background-color: darkgrey;
+  border: 0;
+  border-radius: 10px;
+  color: inherit;
+  font-weight: bold;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+}
+.person {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.leaderboard {
+  display: inline;
+  font-size: 8px;
+  background-color: black;
+  right: 0;
+  top: 0;
+  position: absolute;
+  text-align: right;
+  /*width: 250px;
+  height: 50px;*/
+}
+
+@media only screen and (min-width: 600px) {
+.leaderboard {
+  font-size: 12px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.leaderboard {
+  font-size: 14px;
+}
+}
+
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+.highlight2 {
+  font-weight: bold;
+  color: white;
+  background-color: #3c6478;
+}
+
+.timer {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 100px;
+}
+.score {
+  /*color: #000;*/
+  color: white;
+  font-style: italic;
+  line-height: 48px;
+  position: relative;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.final-score {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.warning {
+  color: #ff0000 !important;
+}
